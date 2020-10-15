@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CakeShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--Sample View Controller-->
         <scene sceneID="ibF-iN-ZCL">
             <objects>
-                <viewController storyboardIdentifier="SampleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3FV-02-4nS" customClass="SampleViewController" customModule="CakeShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SampleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3FV-02-4nS" customClass="SampleViewController" customModule="FoodShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1im-6U-R7c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCell" id="SYC-3m-lIj" customClass="FoodCollectionViewCell" customModule="CakeShop" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCell" id="SYC-3m-lIj" customClass="FoodCollectionViewCell" customModule="FoodShop" customModuleProvider="target">
                                         <rect key="frame" x="90" y="0.0" width="214" height="230"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2ik-lY-RL2">
@@ -109,17 +109,28 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWT-7Y-seg">
+                                <rect key="frame" x="10" y="323" width="394" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95108264590000002" green="0.116501417" blue="0.29470804379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BWT-7Y-seg" firstAttribute="centerY" secondItem="MB6-CI-Nj0" secondAttribute="centerY" constant="-130" id="9KF-0U-GPm"/>
+                            <constraint firstItem="MB6-CI-Nj0" firstAttribute="trailing" secondItem="BWT-7Y-seg" secondAttribute="trailing" constant="10" id="GpE-1g-n6m"/>
+                            <constraint firstItem="BWT-7Y-seg" firstAttribute="leading" secondItem="MB6-CI-Nj0" secondAttribute="leading" constant="10" id="WvG-hC-pGl"/>
                             <constraint firstItem="evG-QV-JgH" firstAttribute="bottom" secondItem="MB6-CI-Nj0" secondAttribute="bottom" constant="-130" id="Wvn-gI-vi9"/>
                             <constraint firstItem="MB6-CI-Nj0" firstAttribute="trailing" secondItem="evG-QV-JgH" secondAttribute="trailing" constant="10" id="fFN-8j-Jto"/>
                             <constraint firstItem="evG-QV-JgH" firstAttribute="leading" secondItem="MB6-CI-Nj0" secondAttribute="leading" constant="10" id="hda-OV-VJk"/>
                             <constraint firstItem="evG-QV-JgH" firstAttribute="top" secondItem="MB6-CI-Nj0" secondAttribute="top" constant="10" id="jaK-Bv-gG6"/>
+                            <constraint firstItem="BWT-7Y-seg" firstAttribute="centerX" secondItem="MB6-CI-Nj0" secondAttribute="centerX" id="sqh-kV-WHJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MB6-CI-Nj0"/>
                     </view>
                     <connections>
+                        <outlet property="errorView" destination="BWT-7Y-seg" id="UY6-Q3-CVn"/>
                         <outlet property="foodCollectionView" destination="evG-QV-JgH" id="L4l-xT-DHn"/>
                     </connections>
                 </viewController>

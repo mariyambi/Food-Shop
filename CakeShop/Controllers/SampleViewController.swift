@@ -15,13 +15,17 @@ class SampleViewController: UIViewController, CategoriesDelegate {
         self.foodCollectionView.reloadData()
     }
     
+    
+    
+    @IBOutlet weak var errorView: UILabel!
     func fetchedAllCategories(foodCategoryList: [FoodCategory]) {
         
     }
     
     func showError(message: String) {
         self.removeLoadingIndicator()
-        self.showAlert(title: "Error", message: message)
+       // self.showAlert(title: "Error", message: message)
+        errorView.text = message
     }
     
     
