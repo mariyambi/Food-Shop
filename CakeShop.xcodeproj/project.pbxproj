@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101A1533253612D400189005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A1532253612D400189005 /* AppDelegate.swift */; };
+		101A1535253612D400189005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A1534253612D400189005 /* SceneDelegate.swift */; };
+		101A1537253612D400189005 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A1536253612D400189005 /* MainViewController.swift */; };
+		101A153A253612D400189005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101A1538253612D400189005 /* Main.storyboard */; };
+		101A153C253612D500189005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101A153B253612D500189005 /* Assets.xcassets */; };
+		101A153F253612D500189005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101A153D253612D500189005 /* LaunchScreen.storyboard */; };
+		101A15482536136700189005 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A15472536136700189005 /* ApiConstants.swift */; };
+		101A154A253614F300189005 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A1549253614F300189005 /* ApiManager.swift */; };
+		101A154C25361C7200189005 /* FoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A154B25361C7200189005 /* FoodInteractor.swift */; };
+		10E3139D25370FDF007C6AD0 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E3139C25370FDF007C6AD0 /* CategoriesResponse.swift */; };
+		10E3139F25371059007C6AD0 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E3139E25371059007C6AD0 /* FoodCategory.swift */; };
+		10E313A12537164D007C6AD0 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E313A02537164D007C6AD0 /* SampleViewController.swift */; };
+		10E313A5253717CF007C6AD0 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E313A4253717CF007C6AD0 /* UISimpleSlidingTabController.swift */; };
+		10E313A725373854007C6AD0 /* FoodByCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E313A625373854007C6AD0 /* FoodByCategoryResponse.swift */; };
+		10E313A9253738D2007C6AD0 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E313A8253738D2007C6AD0 /* Food.swift */; };
+		10E313B125374DC3007C6AD0 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E313B025374DC3007C6AD0 /* FoodCollectionViewCell.swift */; };
+		10E313B425377768007C6AD0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E313B325377768007C6AD0 /* UIViewExtensions.swift */; };
+		10E313B825383833007C6AD0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E313B725383833007C6AD0 /* UIViewControllerExtension.swift */; };
+		D178748308DE547989329C92 /* Pods_CakeShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4917CD8BB84D6F915AE3459F /* Pods_CakeShop.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		101A152F253612D400189005 /* FoodShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101A1532253612D400189005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		101A1534253612D400189005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		101A1536253612D400189005 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		101A1539253612D400189005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		101A153B253612D500189005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		101A153E253612D500189005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		101A1540253612D500189005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101A15472536136700189005 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		101A1549253614F300189005 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		101A154B25361C7200189005 /* FoodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInteractor.swift; sourceTree = "<group>"; };
+		10E3139C25370FDF007C6AD0 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		10E3139E25371059007C6AD0 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		10E313A02537164D007C6AD0 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		10E313A4253717CF007C6AD0 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
+		10E313A625373854007C6AD0 /* FoodByCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodByCategoryResponse.swift; sourceTree = "<group>"; };
+		10E313A8253738D2007C6AD0 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		10E313B025374DC3007C6AD0 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		10E313B325377768007C6AD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		10E313B725383833007C6AD0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		4917CD8BB84D6F915AE3459F /* Pods_CakeShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CakeShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B11566ACA30354B76ABD60 /* Pods-CakeShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CakeShop.release.xcconfig"; path = "Target Support Files/Pods-CakeShop/Pods-CakeShop.release.xcconfig"; sourceTree = "<group>"; };
+		F53C8C2E70AF00C69BEDC678 /* Pods-CakeShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CakeShop.debug.xcconfig"; path = "Target Support Files/Pods-CakeShop/Pods-CakeShop.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		101A152C253612D400189005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D178748308DE547989329C92 /* Pods_CakeShop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		101A1526253612D400189005 = {
+			isa = PBXGroup;
+			children = (
+				101A1531253612D400189005 /* CakeShop */,
+				101A1530253612D400189005 /* Products */,
+				F01100E7A1C0A07C98FBB86E /* Pods */,
+				879941B5E7CFBADFDBF1741B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		101A1530253612D400189005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				101A152F253612D400189005 /* FoodShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		101A1531253612D400189005 /* CakeShop */ = {
+			isa = PBXGroup;
+			children = (
+				10E313B925384079007C6AD0 /* Controllers */,
+				10E313B225377752007C6AD0 /* Extensions */,
+				10E3139B25370F0E007C6AD0 /* Model */,
+				10E3139A25370F02007C6AD0 /* Response */,
+				101A15462536133000189005 /* API */,
+				101A1532253612D400189005 /* AppDelegate.swift */,
+				101A1534253612D400189005 /* SceneDelegate.swift */,
+				101A1538253612D400189005 /* Main.storyboard */,
+				101A153B253612D500189005 /* Assets.xcassets */,
+				101A153D253612D500189005 /* LaunchScreen.storyboard */,
+				101A1540253612D500189005 /* Info.plist */,
+				101A154B25361C7200189005 /* FoodInteractor.swift */,
+			);
+			path = CakeShop;
+			sourceTree = "<group>";
+		};
+		101A15462536133000189005 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				101A15472536136700189005 /* ApiConstants.swift */,
+				101A1549253614F300189005 /* ApiManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		10E3139A25370F02007C6AD0 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				10E3139C25370FDF007C6AD0 /* CategoriesResponse.swift */,
+				10E313A625373854007C6AD0 /* FoodByCategoryResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		10E3139B25370F0E007C6AD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10E3139E25371059007C6AD0 /* FoodCategory.swift */,
+				10E313A8253738D2007C6AD0 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10E313B225377752007C6AD0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10E313B325377768007C6AD0 /* UIViewExtensions.swift */,
+				10E313B725383833007C6AD0 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10E313B925384079007C6AD0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				101A1536253612D400189005 /* MainViewController.swift */,
+				10E313A02537164D007C6AD0 /* SampleViewController.swift */,
+				10E313A4253717CF007C6AD0 /* UISimpleSlidingTabController.swift */,
+				10E313B025374DC3007C6AD0 /* FoodCollectionViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		879941B5E7CFBADFDBF1741B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4917CD8BB84D6F915AE3459F /* Pods_CakeShop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F01100E7A1C0A07C98FBB86E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F53C8C2E70AF00C69BEDC678 /* Pods-CakeShop.debug.xcconfig */,
+				68B11566ACA30354B76ABD60 /* Pods-CakeShop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		101A152E253612D400189005 /* CakeShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 101A1543253612D500189005 /* Build configuration list for PBXNativeTarget "CakeShop" */;
+			buildPhases = (
+				3E24C312F740095BDDA76094 /* [CP] Check Pods Manifest.lock */,
+				101A152B253612D400189005 /* Sources */,
+				101A152C253612D400189005 /* Frameworks */,
+				101A152D253612D400189005 /* Resources */,
+				22A5066C595638C200B56809 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CakeShop;
+			productName = CakeShop;
+			productReference = 101A152F253612D400189005 /* FoodShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		101A1527253612D400189005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = YaraTech;
+				TargetAttributes = {
+					101A152E253612D400189005 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 101A152A253612D400189005 /* Build configuration list for PBXProject "CakeShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 101A1526253612D400189005;
+			productRefGroup = 101A1530253612D400189005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				101A152E253612D400189005 /* CakeShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		101A152D253612D400189005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101A153F253612D500189005 /* LaunchScreen.storyboard in Resources */,
+				101A153C253612D500189005 /* Assets.xcassets in Resources */,
+				101A153A253612D400189005 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22A5066C595638C200B56809 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CakeShop/Pods-CakeShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CakeShop/Pods-CakeShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CakeShop/Pods-CakeShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E24C312F740095BDDA76094 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CakeShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		101A152B253612D400189005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E313A9253738D2007C6AD0 /* Food.swift in Sources */,
+				101A15482536136700189005 /* ApiConstants.swift in Sources */,
+				10E313B825383833007C6AD0 /* UIViewControllerExtension.swift in Sources */,
+				101A1537253612D400189005 /* MainViewController.swift in Sources */,
+				10E313B125374DC3007C6AD0 /* FoodCollectionViewCell.swift in Sources */,
+				10E313A5253717CF007C6AD0 /* UISimpleSlidingTabController.swift in Sources */,
+				101A154A253614F300189005 /* ApiManager.swift in Sources */,
+				10E3139F25371059007C6AD0 /* FoodCategory.swift in Sources */,
+				10E313A725373854007C6AD0 /* FoodByCategoryResponse.swift in Sources */,
+				10E313B425377768007C6AD0 /* UIViewExtensions.swift in Sources */,
+				101A1533253612D400189005 /* AppDelegate.swift in Sources */,
+				101A1535253612D400189005 /* SceneDelegate.swift in Sources */,
+				10E3139D25370FDF007C6AD0 /* CategoriesResponse.swift in Sources */,
+				101A154C25361C7200189005 /* FoodInteractor.swift in Sources */,
+				10E313A12537164D007C6AD0 /* SampleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		101A1538253612D400189005 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101A1539253612D400189005 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		101A153D253612D500189005 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101A153E253612D500189005 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		101A1541253612D500189005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		101A1542253612D500189005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		101A1544253612D500189005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53C8C2E70AF00C69BEDC678 /* Pods-CakeShop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYA42XP4K7;
+				INFOPLIST_FILE = CakeShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.machinetest.foodshop;
+				PRODUCT_NAME = FoodShop;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		101A1545253612D500189005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B11566ACA30354B76ABD60 /* Pods-CakeShop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYA42XP4K7;
+				INFOPLIST_FILE = CakeShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.machinetest.foodshop;
+				PRODUCT_NAME = FoodShop;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		101A152A253612D400189005 /* Build configuration list for PBXProject "CakeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101A1541253612D500189005 /* Debug */,
+				101A1542253612D500189005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		101A1543253612D500189005 /* Build configuration list for PBXNativeTarget "CakeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101A1544253612D500189005 /* Debug */,
+				101A1545253612D500189005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 101A1527253612D400189005 /* Project object */;
+}

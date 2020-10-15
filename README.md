@@ -1,1 +1,2 @@
-# Food-Shop
+# FoodShop
+Food Shop App
